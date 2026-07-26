@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://mammy.app/.well-known/*
+host: https://mammy.app
+note: >-
+  FilSekka/MammyApp is a consumer B2C mobile app with no developer or API
+  surface. No .well-known discovery documents are published. Recorded for
+  auditability; no WellKnown/SecurityTxt pointer is wired because nothing
+  returned 200 (absence is a valid, expected result).
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

@@ -1,19 +1,48 @@
 aid: filsekka
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/filsekka.png
 name: FilSekka
-description: FilSekka is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  FilSekka (also styled Felsekka, Android package com.felsekka) is the company
+  behind MammyApp (Mammy.app), an Arabic-language pregnancy calculator and
+  week-by-week pregnancy tracking mobile app for Arab mothers. The app computes a
+  due date and current pregnancy week from a start date, then serves daily,
+  weekly-updated medical content covering fetal development, symptoms, nutrition,
+  exercise, and childbirth, plus an integrated e-commerce shop (shop.mammy.app)
+  selling maternity and baby products with delivery. FilSekka is a consumer B2C
+  mobile product surfaced as a 500 Global portfolio company; it publishes no
+  public developer API, developer portal, SDKs, or machine-readable API surface,
+  so this profile is identity-only.
 url: https://raw.githubusercontent.com/api-evangelist/filsekka/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: consumer-b2c-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pregnancy
+- Maternal Health
+- Health
+- Mobile App
+- E-commerce
+- Consumer
+- Arabic
+- Femtech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/filsekka-domain-security.yml
 - type: Website
   url: https://mammy.app
+- type: Store
+  url: https://shop.mammy.app
+- type: PrivacyPolicy
+  url: https://shop.mammy.app/en/privacy-policy
+- type: GooglePlay
+  url: https://play.google.com/store/apps/details?id=com.felsekka
+- type: Facebook
+  url: https://www.facebook.com/mammy.app.official/
+- type: Instagram
+  url: https://www.instagram.com/mammy.app/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/mammyapp
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
